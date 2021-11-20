@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My App</title>
+    <% if (htmlWebpackPlugin.options.nodeModules) { %>
+        <script>
+          require( "module" ).globalPaths.push( '<%= htmlWebpackPlugin.options.nodeModules.replace( /\\/g, "\\\\" ) %>' )
+        </script>
+    <% } %>
+</head>
+<body>
+<div id="app">
+    <div class="title-bar">App</div>
+    <section class="el-container" id="container">
+        <aside class="el-aside aside" style="width: 78px;"></aside>
+        <aside class="el-aside subnav" style="width: 200px;"></aside>
+        <section class="el-container main"></section>
+    </section>
+</div>
+<% if (!htmlWebpackPlugin.options.isBrowser && !htmlWebpackPlugin.options.isDev) {
+%>
+    <script>
+      import { STATIC_SOURCES_DIRECTORY } from "../config/constants"
+
+      window.__static = STATIC_SOURCES_DIRECTORY.replace( /\\/g, "\\\\" )
+    </script>
+<% } %>
+
+</body>
+</html>

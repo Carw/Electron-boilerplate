@@ -1,0 +1,34 @@
+[
+  {
+    "id": "app.show",
+    "label": "Показать приложение",
+    "command": "application:show",
+    "command-arg": {
+      "page": "index"
+    }
+  },
+  {
+    "id": "help.manual",
+    "label": "Помощь",
+    "command": "help:manual"
+  },
+  {
+    "id": "app.check-for-updates",
+    "label": "Проверить обновление",
+    "command": "application:check-for-updates"
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "id": "app.preferences",
+    "label": "Настройки",
+    "command": "application:preferences",
+    "command-before": "application:show?page=index"
+  },
+  {
+    "id": "app.quit",
+    "label": "Закрыть",
+    "command": "application:quit"
+  }
+]

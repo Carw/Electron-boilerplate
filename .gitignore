@@ -1,0 +1,11 @@
+.DS_Store
+dist
+*.provisionprofile
+build/*.plist
+npm-debug.log
+npm-debug.log.*
+thumbs.db
+!.gitkeep
+release/*
+.idea
+node_modules

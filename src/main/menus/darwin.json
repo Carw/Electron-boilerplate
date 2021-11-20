@@ -1,0 +1,174 @@
+{
+  "menu": [
+    {
+      "id": "menu.app",
+      "label": "Программа",
+      "submenu": [
+        {
+          "id": "app.about",
+          "label": "О программе",
+          "command": "application:about",
+          "command-before": "application:show?page=index"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "id": "app.preferences",
+          "label": "Настройки",
+          "command": "application:preferences"
+        },
+        {
+          "id": "app.check-for-updates",
+          "label": "Проверить обновление",
+          "command": "application:check-for-updates"
+        },
+        {
+          "id": "app.hide",
+          "label": "Скрыть приложение",
+          "role": "hide"
+        },
+        {
+          "id": "app.hide-others",
+          "label": "Скрыть что-то еще",
+          "role": "hideothers"
+        },
+        {
+          "id": "app.unhide",
+          "label": "Показать",
+          "role": "unhide"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "id": "app.quit",
+          "label": "Закрыть",
+          "command": "application:quit"
+        }
+      ]
+    },
+    {
+      "id": "menu.edit",
+      "label": "Редактировать",
+      "submenu": [
+        {
+          "id": "edit.undo",
+          "label": "Отменить",
+          "role": "undo"
+        },
+        {
+          "id": "edit.redo",
+          "label": "Вернуть",
+          "role": "redo"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "id": "edit.cut",
+          "label": "Вырезать",
+          "role": "cut"
+        },
+        {
+          "id": "edit.copy",
+          "label": "Копировать",
+          "role": "copy"
+        },
+        {
+          "id": "edit.paste",
+          "label": "Вставить",
+          "role": "paste"
+        },
+        {
+          "id": "edit.delete",
+          "label": "Удалить",
+          "role": "delete"
+        },
+        {
+          "id": "edit.select-all",
+          "label": "Выделить все",
+          "role": "selectall"
+        }
+      ]
+    },
+    {
+      "role": "window",
+      "label": "Окно",
+      "id": "menu.window",
+      "submenu": [
+        {
+          "id": "window.reload",
+          "label": "Перезагрузить",
+          "role": "reload"
+        },
+        {
+          "id": "window.close",
+          "label": "Закрыть",
+          "role": "close"
+        },
+        {
+          "id": "window.minimize",
+          "label": "Свернуть",
+          "role": "minimize"
+        },
+        {
+          "id": "window.zoom",
+          "label": "Зумм",
+          "role": "zoom"
+        },
+        {
+          "id": "window.toggle-fullscreen",
+          "label": "Полный экран",
+          "role": "togglefullscreen"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "id": "window.front",
+          "label": "На передний план",
+          "role": "front"
+        }
+      ]
+    },
+    {
+      "role": "help",
+      "label": "Помощь",
+      "id": "menu.help",
+      "submenu": [
+        {
+          "id": "help.official-website",
+          "label": "Сайт",
+          "command": "help:official-website"
+        },
+        {
+          "id": "help.manual",
+          "label": "Руководство",
+          "command": "help:manual"
+        },
+        {
+          "id": "help.release-notes",
+          "label": "Изменения",
+          "command": "help:release-notes"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "id": "help.report-problem",
+          "label": "Сообщить о проблеме",
+          "command": "help:report-problem"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "id": "help.toggle-dev-tools",
+          "label": "Инструмент разработчика",
+          "role": "toggledevtools"
+        }
+      ]
+    }
+  ]
+}
